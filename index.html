@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table of 2</title>
+    <style>
+        table, td, tr {
+            width: 200px;
+            /*border: 1px dotted black;*/
+        }
+    </style>
+</head>
+<body>
+<div id="my_cus_div">
+
+</div>
+<script>
+    var array = ["1", "2", "3"];
+    var array_2 = [1, 2, 3];
+    var string = "Skqjhadfkjashkdfhska";
+    var integer = 41;
+    // comments will be placed like this.
+    var my_cus_div = document.getElementById("my_cus_div");
+    var html_content = "<table>";
+    for (var i=1; i<11; i++) {
+        html_content += "<tr><td>2</td><td>*</td><td>"+ i + "</td><td>=<td>" + (2 * i) + "</td>";
+    }
+    my_cus_div.innerHTML = html_content + "</table>";
+    console.log(html_content);
+</script>
+</body>
+</html>
